@@ -1,0 +1,59 @@
+public class Tiger {
+
+    private int alter;
+    private int anzahlJungtiere;
+    private int anzahlStreifen;
+
+    private String geschlecht;
+
+    public Tiger(int alter, int anzahlJungtiere, int anzahlStreifen, String geschlecht) {
+        this.alter = alter;
+        this.anzahlJungtiere = anzahlJungtiere;
+        this.anzahlStreifen = anzahlStreifen;
+        this.geschlecht = geschlecht;
+    }
+
+    public void fauchen(){
+        System.out.println("Faaaauuuuuuch!");
+    }
+
+    public void fressen(){
+        System.out.println("Schmatz, schmatz");
+    }
+
+    public void fressen(String essen){
+        System.out.println("Schmatz, schmatz, ich habe " + essen + " gegessen!");
+    }
+
+    public void fressen(String essen1, String essen2){
+        System.out.println("Schmatz, schmatz, ich habe " + essen1 + " und " + essen2 + " gegessen!");
+    }
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public int getAnzahlJungtiere() {
+        return anzahlJungtiere;
+    }
+
+    public int getAnzahlStreifen(){
+        return anzahlStreifen;
+    }
+
+    public String getGeschlecht() {
+        return geschlecht;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    public void setAnzahlJungtiere(int anzahlJungtiere) {
+        this.anzahlJungtiere = anzahlJungtiere;
+    }
+
+    public void setAnzahlStreifen(int anzahlStreifen) {
+        this.anzahlStreifen = anzahlStreifen;
+    }
+}

@@ -1,0 +1,18 @@
+public class RunZoo {
+    public static void main(String[] args) {
+        Tiger theo = new Tiger(6, 3, 50);
+        Tiger thorsten = new Tiger(10, 0, 30);
+        Tiger tom = new Tiger(12, 4, 25);
+
+        int alterTheoBisher = theo.getAlter();
+        theo.setAlter(alterTheoBisher + 1);
+
+        thorsten.setAnzahlJungtiere(1);
+        int anzahlStreifenTomBisher = tom.getAnzahlStreifen();
+        tom.setAnzahlStreifen(anzahlStreifenTomBisher*2);
+
+        System.out.println("Theo ist " + theo.getAlter() + " Jahre alt.");
+        System.out.println("Thorsten hat " + thorsten.getAnzahlJungtiere() + " Jungtiere");
+        System.out.println("Tom hat " + tom.getAnzahlStreifen() + " Streifen");
+    }
+}

@@ -1,0 +1,96 @@
+public class Tier {
+
+    private String name;
+    private int alter;
+    private String geschlecht;
+    private double gewicht;
+    private int anzahlBeine;
+    private int anzahlJungtiere;
+    private double gesundheitswert;
+
+    public Tier(String name, int alter, String geschlecht, double gewicht, int anzahlBeine, int anzahlJungtiere, double gesundheitswert) {
+        this.name = name;
+        this.alter = alter;
+        this.geschlecht = geschlecht;
+        this.gewicht = gewicht;
+        this.anzahlBeine = anzahlBeine;
+        this.anzahlJungtiere = anzahlJungtiere;
+        this.gesundheitswert = gesundheitswert;
+    }
+
+    public void fressen(double anzahlKilo){
+
+    }
+
+    public void trinken(double anzahlLiter){
+
+    }
+
+    public void kacken(double anzahlKilo){
+
+    }
+
+    public void pinkeln(double anzahlLiter){
+
+    }
+
+    public void schlafen(double anzahlStunden){
+
+    }
+
+    public void sichVorstellen(){
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    public String getGeschlecht() {
+        return geschlecht;
+    }
+
+    public double getGewicht() {
+        return gewicht;
+    }
+
+    public void setGewicht(double gewicht) {
+        this.gewicht = gewicht;
+    }
+
+    public int getAnzahlBeine() {
+        return anzahlBeine;
+    }
+
+    public void setAnzahlBeine(int anzahlBeine) {
+        this.anzahlBeine = anzahlBeine;
+    }
+
+    public int getAnzahlJungtiere() {
+        return anzahlJungtiere;
+    }
+
+    public void setAnzahlJungtiere(int anzahlJungtiere) {
+        this.anzahlJungtiere = anzahlJungtiere;
+    }
+
+    public double getGesundheitswert() {
+        return gesundheitswert;
+    }
+
+    public void setGesundheitswert(double gesundheitswert) {
+        this.gesundheitswert = gesundheitswert;
+    }
+}

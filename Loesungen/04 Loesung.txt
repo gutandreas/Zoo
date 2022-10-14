@@ -1,0 +1,36 @@
+public class Tiger {
+
+    int alter = 6;
+    int anzahlJungtiere = 3;
+    int anzahlStreifen = 50;
+
+
+    void fauchen(){
+        System.out.println("Faaaauuuuuuch!");
+    }
+
+    void fressen(){
+        System.out.println("Schmatz, schmatz");
+    }
+
+    void fressen(String essen){
+        System.out.println("Schmatz, schmatz, ich habe " + essen + " gegessen!");
+    }
+
+    void fressen(String essen1, String essen2){
+        System.out.println("Schmatz, schmatz, ich habe " + essen1 + " und " + essen2 + " gegessen!");
+    }
+
+    int getAlter() {
+        return alter;
+    }
+
+    int getAnzahlJungtiere() {
+        return anzahlJungtiere;
+    }
+
+    int getAnzahlStreifen(){
+        return anzahlStreifen;
+    }
+
+}

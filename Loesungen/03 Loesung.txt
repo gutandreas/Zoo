@@ -1,0 +1,10 @@
+public class Tiger {
+
+    void fauchen(){
+        System.out.println("Faaaauuuuuuch!");
+    }
+
+    void fressen(){
+        System.out.println("Schmatz, schmatz");
+    }
+}

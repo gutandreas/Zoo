@@ -1,0 +1,43 @@
+public class Kamel extends Tier {
+
+    private double anzahlLiterWasserImKoerper;
+
+    public Kamel(String name, int alter, String geschlecht, double gewicht, int anzahlBeine, int anzahlJungtiere,
+                 double gesundheitswert, double anzahlLiterWasserImKoerper) {
+        super(name, alter, geschlecht, gewicht, anzahlBeine, anzahlJungtiere, gesundheitswert);
+        this.anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper;
+    }
+
+    @Override
+    public void trinken(double anzahlLiter){
+        super.trinken(anzahlLiter);
+        anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper + anzahlLiter;
+        if (anzahlLiterWasserImKoerper > 300){
+            anzahlLiterWasserImKoerper = 300;
+        }
+        System.out.println("Nun habe ich " + anzahlLiterWasserImKoerper + " Liter Wasser im Köper gespeichert");
+    }
+
+    @Override
+    public void pinkeln(double anzahlLiter){
+        super.pinkeln(anzahlLiter);
+        anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper - anzahlLiter;
+        if (anzahlLiterWasserImKoerper < 0){
+            anzahlLiterWasserImKoerper = 0;
+        }
+        System.out.println("Nun habe ich " + anzahlLiterWasserImKoerper + " Liter Wasser im Köper gespeichert");
+    }
+
+    @Override
+    public void sichVorstellen(){
+        System.out.println("Ich bin ein Kamel und heisse " + name + ".");
+    }
+
+    public double getAnzahlLiterWasserImKoerper() {
+        return anzahlLiterWasserImKoerper;
+    }
+
+    public void setAnzahlLiterWasserImKoerper(double anzahlLiterWasserImKoerper) {
+        this.anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper;
+    }
+}

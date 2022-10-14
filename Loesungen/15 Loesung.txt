@@ -1,0 +1,15 @@
+public class Gehege {
+    public static void main(String[] args) {
+        int[] array = new int[10];
+        array[0] = 4;
+        array[1] = 5;
+        array[2] = 123;
+        array[3] = -90;
+        array[4] = 8;
+        array[5] = 92;
+        array[6] = 478;
+        array[7] = 35;
+        array[8] = 36;
+        array[9] = 13;
+    }
+}

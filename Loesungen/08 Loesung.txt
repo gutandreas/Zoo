@@ -1,0 +1,42 @@
+public class Kamel {
+
+    private int alter;
+    private int anzahlJungtiere;
+    private int anzahlLiterWasserImKoerper;
+    private String geschlecht;
+
+    public Kamel(int alter, int anzahlJungtiere, int anzahlLiterWasserImKoerper, String geschlecht) {
+        this.alter = alter;
+        this.anzahlJungtiere = anzahlJungtiere;
+        this.anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper;
+        this.geschlecht = geschlecht;
+    }
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public int getAnzahlJungtiere() {
+        return anzahlJungtiere;
+    }
+
+    public int getAnzahlLiterWasserImKoerper() {
+        return anzahlLiterWasserImKoerper;
+    }
+
+    public String getGeschlecht() {
+        return geschlecht;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    public void setAnzahlJungtiere(int anzahlJungtiere) {
+        this.anzahlJungtiere = anzahlJungtiere;
+    }
+
+    public void setAnzahlLiterWasserImKoerper(int anzahlLiterWasserImKoerper) {
+        this.anzahlLiterWasserImKoerper = anzahlLiterWasserImKoerper;
+    }
+}

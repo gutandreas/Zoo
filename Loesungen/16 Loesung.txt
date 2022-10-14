@@ -1,0 +1,20 @@
+public class Gehege {
+    Tier[] array;
+
+    public Gehege(int groesse) {
+        this.array = new Tier[groesse];
+    }
+
+    public void tierEinsperren(Tier tier){
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == null){
+                array[i] = tier;
+                System.out.println("Das Tier wurde im Gehege auf Position " + i + " eingesperrt.");
+                break;
+            }
+            if (i == array.length-1){
+                System.out.println("Das Gehege ist bereits voll und das Tier konnte nicht eingesperrt werden!");
+            }
+        }
+    }
+}
