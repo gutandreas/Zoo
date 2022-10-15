@@ -1,7 +1,7 @@
 public class Gehege2d {
-    Tier[][] array;
-    int zeilen;
-    int spalten;
+    private Tier[][] array;
+    private int zeilen;
+    private int spalten;
 
     public Gehege2d(int zeilen, int spalten) {
         this.array = new Tier[zeilen][spalten];
