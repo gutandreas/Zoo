@@ -85,7 +85,7 @@ public class Mission3 {
         else {
             System.out.println(ANSI_RED + "Aufgabe 2 wurde noch nicht korrekt gelöst!" + ANSI_RESET);
         }
-//
+
         // Korrektur Aufgabe 3
         if (besucher1.getStimmungswert() == 100 && besucher2.getStimmungswert() == 100){
             System.out.println(ANSI_GREEN + "Aufgabe 3 wurde korrekt gelöst!" + ANSI_RESET);
@@ -93,7 +93,7 @@ public class Mission3 {
         else {
             System.out.println(ANSI_RED + "Aufgabe 3 wurde noch nicht korrekt gelöst!" + ANSI_RESET);
         }
-//
+
         // Korrektur Aufgabe 4
         if (tiger.getAnzahlStreifen() == 480){
             System.out.println(ANSI_GREEN + "Aufgabe 4 wurde korrekt gelöst!" + ANSI_RESET);
@@ -110,8 +110,6 @@ public class Mission3 {
         else {
             System.out.println(ANSI_RED + "Aufgabe 5 wurde noch nicht korrekt gelöst!" + ANSI_RESET);
         }
-
-
 
 
     }
