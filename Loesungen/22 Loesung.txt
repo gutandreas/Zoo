@@ -47,15 +47,16 @@ public class Mission2 {
         kamelgehege.tierBefreien(zeile, spalte);
 
         //TODO: Aufgabe 2) Lass besucher1 solange Tiger aus dem Tigergehege bestaunen, bis er besser gelaunt ist als besucher2
-        while (besucher1.getStimmungswert() < besucher2.getStimmungswert()){
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 2; j++) {
-                    if (tigergehege.aufPositionSchauen(i, j) != null) {
-                        besucher1.tierBestaunen(tigergehege.aufPositionSchauen(i, j));
-                    }
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                if (tigergehege.aufPositionSchauen(i, j) != null && besucher1.getStimmungswert() <= besucher2.getStimmungswert()) {
+                    besucher1.tierBestaunen(tigergehege.aufPositionSchauen(i, j));
+                    System.out.println(besucher1.getStimmungswert());
                 }
             }
         }
+
 
         //TODO: Aufgabe 3) Das Kamel auf Position 0/1 soll mit dem Tiger auf Position 1/1 ausgetauscht werden
         Tier befreitesTier = kamelgehege.tierBefreien(0, 1);
@@ -83,7 +84,7 @@ public class Mission2 {
         }
 
         // Korrektur Aufgabe 2
-        if (besucher1.getStimmungswert() == 67){
+        if (besucher1.getStimmungswert() == 62){
             System.out.println(ANSI_GREEN + "Aufgabe 2 wurde korrekt gelöst!" + ANSI_RESET);
         }
         else {
