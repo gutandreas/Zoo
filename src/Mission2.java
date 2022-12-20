@@ -39,6 +39,7 @@ public class Mission2 {
                     if (kamelgehege.aufPositionSchauen(i, j).getAlter() > maxAlter) {
                         zeile = i;
                         spalte = j;
+                        maxAlter = kamelgehege.aufPositionSchauen(i, j).getAlter();
                     }
                 }
             }
